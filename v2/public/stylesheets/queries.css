@@ -1,0 +1,40 @@
+@media only screen and (max-width: 1430px) {
+ 	
+ 	/*img {
+ 		display: none!important;
+ 	}  
+*/
+	body {
+		width: 90%;
+		margin: 20px auto;
+	}
+	
+	.wrap {
+		width: auto;
+	}
+
+	.projects {
+		margin: auto auto auto 10%;
+	}
+
+	
+}
+
+@media only screen and (max-width: 500px) {
+ 	   
+	
+	.container {
+		margin: auto;
+	}
+
+	.project {
+		grid-column: 1;
+	}
+
+	.right-half {
+		grid-column: 1;
+		width: auto;
+	}
+
+	
+}
