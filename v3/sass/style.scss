@@ -1,0 +1,121 @@
+@import "about";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$main-font: sans-serif, serif;
+$main-color-back: rgba(20, 35, 42, 0.67);
+$font-color: white;
+
+* {
+	box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    background: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+
+.wrap {
+//    height: 100vh;
+    display: grid;
+    grid-template-rows: 300px 200px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+        "main nav"
+        "main aside";
+    max-width: 800px;
+    margin: 4px auto ;
+    grid-gap: 4px;
+    padding-top: 50px;
+    
+    aside {
+        grid-area: aside;
+        background-color: #6ad78a; 
+    }
+
+    main {
+        grid-area: main;
+        background-color: #aad2ed;  
+    }
+
+    nav {
+        grid-area: nav;
+        background-color: #fbaea8;
+    }
+}
+
+.navbar {
+    background: $main-color-back;
+    .header {
+    grid-area: header;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: $font-color;
+    ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    li {
+        margin-left: 20px;
+        padding: 5px 20px;
+//        border: 1px solid #602c2c;
+        border-radius: 5px;
+        transition-duration: 1s;
+        background: #6da86b;
+    }
+        li:hover {
+            color: black;
+            background: white;
+        } 
+    
+    h1 {
+        align-self: center;    
+        font-weight: 100;
+        font-size: 16px;
+        padding: 5px 20px;
+//        border: 1px solid white;
+        border-radius: 5px;   
+        background: #6da86b;
+    }
+    h1:hover {
+        color: black;
+        background: white;
+        transition-duration: 1s;
+    }
+        
+  }
+}
+
+
+footer {
+    background: $main-color-back;
+    color: $font-color;
+    text-align: center;
+    padding: 10px;
+}
+
+//@media (min-width: 780px) {
+//  .container {
+//    grid-template-columns: 1fr 2fr 1fr;
+//    grid-template-rows: 100px minmax(150px, auto) 100px;
+//    grid-template-areas: 
+//    "header header header"
+//    "nav main aside"
+//    "footer footer footer";
+//  }
+//}
+//
+//@media (min-width: 992px) {
+//  .container {
+//    grid-template-areas: 
+//    "header header header"
+//    "nav main aside"
+//    "footer footer footer";
+//  }
+//}

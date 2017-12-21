@@ -1,0 +1,22 @@
+.img {
+    background-image: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, 1) ), url("https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?auto=format&fit=crop&w=750&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    .about {
+    max-width: 800px;
+    margin: 4px auto;
+    height: 550px;
+        
+//    display: flex;
+        p {
+            color: white;
+            font-size: 2em;
+//            align-self: center;
+            text-align: center;
+            margin: 0 20px;
+            padding-top: 30%;
+            font-weight: 100;
+        }
+    }
+}
